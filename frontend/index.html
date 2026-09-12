@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF → Word Pro</title>
+  <meta name="description" content="Chuyển PDF sang Word nhanh, giữ bố cục và nội dung." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">P</div>
+        <div>
+          <div class="brand-title">PDF<span>2</span>Word</div>
+          <div class="brand-sub">Chuyển đổi tài liệu chuyên nghiệp</div>
+        </div>
+      </div>
+      <div class="badge">⚡ Nhanh · Riêng tư · Dễ dùng</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">PDF → MICROSOFT WORD</div>
+        <h1>Chuyển PDF sang Word<br><span>mượt mà & chính xác</span></h1>
+        <p>Giữ nội dung, bố cục, hình ảnh và bảng biểu ở mức tốt nhất có thể.</p>
+
+        <div id="dropzone" class="dropzone">
+          <input id="fileInput" type="file" accept="application/pdf,.pdf" hidden />
+          <div class="upload-icon">↑</div>
+          <h2>Kéo thả file PDF vào đây</h2>
+          <p>hoặc</p>
+          <button id="chooseBtn" class="primary">Chọn file PDF</button>
+          <small>PDF · tối đa tùy cấu hình máy chủ</small>
+        </div>
+
+        <div id="fileCard" class="file-card hidden">
+          <div class="pdf-icon">PDF</div>
+          <div class="file-info">
+            <strong id="fileName"></strong>
+            <span id="fileSize"></span>
+            <div class="progress"><i id="progressBar"></i></div>
+            <span id="status">Sẵn sàng chuyển đổi</span>
+          </div>
+          <button id="removeBtn" class="icon-btn" title="Xóa">×</button>
+        </div>
+
+        <button id="convertBtn" class="convert hidden">Chuyển sang Word <span>→</span></button>
+        <a id="downloadBtn" class="download hidden" download>↓ Tải file Word</a>
+        <div id="error" class="error hidden"></div>
+      </section>
+
+      <section class="features">
+        <div><b>01</b><h3>Giữ bố cục</h3><p>Ưu tiên bảo toàn vị trí văn bản, hình ảnh và bảng.</p></div>
+        <div><b>02</b><h3>Hỗ trợ tiếng Việt</h3><p>Không tự ý thay đổi nội dung văn bản Unicode.</p></div>
+        <div><b>03</b><h3>Xử lý an toàn</h3><p>File được xử lý trong phiên chuyển đổi và có thể tự dọn sau đó.</p></div>
+      </section>
+    </main>
+
+    <footer>PDF2Word Pro · Bạn kiểm tra file Word sau khi chuyển đổi với tài liệu quan trọng.</footer>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
